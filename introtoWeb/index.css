@@ -1,1 +1,113 @@
-de
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+header {
+  background-color: #4f46e5;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header p {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1rem;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #c7d2fe;
+}
+
+#intro {
+    padding: 2rem;
+    max-width: 900px;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+#intro img {
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.name {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.name span {
+    color: #4f46e5;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+footer {
+    background-color: #e0e7ff;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #4f46e5;
+    font-weight: 500;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* #intro {
+  padding-bottom: 10rem;
+}
+#intro p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.name span {
+  font-family: var(--sans);
+  font-size: 4rem;
+  color: var(--aqua);
+  display: block;
+  font-weight: 300;
+}
+
+#intro h2 {
+  font-size: 4rem;
+}
+
+img {
+  display: block;
+  max-width: 10%;
+  height: 10%;
+} */
