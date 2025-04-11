@@ -45,7 +45,7 @@ header h3 {
   font-size: 2.5rem;
   font-weight: bold;
 }
-nav {
+header nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -66,7 +66,7 @@ nav ul {
   gap: 2rem; */
 }
 
-nav a {
+header nav a {
   /* color: white; */
   text-decoration: none;
   color: var(--black);
@@ -191,6 +191,7 @@ h2 {
 footer {
   background-color: var(--brightpinkclr);
   padding: 1rem;
+  margin-bottom: 0;
   text-align: center;
 }
 
@@ -198,8 +199,9 @@ footer ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
-  padding: 0;
+  align-items: center;
+  /* gap: 1.5rem; */
+  /* padding: 0; */
 }
 
 footer a {
@@ -212,6 +214,27 @@ footer a:hover {
   text-decoration: underline;
 }
 
+#copyrights {
+  font-size: 0.6rem;
+}
+.card {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  align-items: center;
+}
+input[type="text"],
+textarea {
+  width: 70%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
 /* #intro {
   padding-bottom: 10rem;
 }
