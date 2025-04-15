@@ -24,8 +24,7 @@ function TodoForm(){
     return(
         <>
         <div>
-            <h1>Form</h1>
-            <p>Enter the to do's</p>
+            <h1>To-Do List</h1>
             <form onSubmit = {handleSubmit}>
             <input
             type="text"
