@@ -3,6 +3,17 @@ import React ,{useEffect,useState} from 'react';
 function TodoList(){
     const [input,setInput] = useState("");
     const [task,setTask] = useState([]);
+
+    useEffect(() => {
+        const savedTasks = JSON.parse(localStorage.getItem('todos')) || [];
+        setTask(savedTasks);
+    }, []);
+
+      // Save tasks to localStorage whenever they change
+      useEffect(() => {
+        localStorage.setItem('todos', JSON.stringify(task));
+    }, [task]);
+
     const handleChange = (e)=>{
         setInput(e.target.value)
         
@@ -12,7 +23,9 @@ function TodoList(){
         if(input.trim()!==""){
             console.log("Added task")
             setTask([...task,input])
-            setInput("")}
+            setInput("")
+        localStorage.setItem('todos',(task))
+        }
         
     }
 
@@ -20,7 +33,6 @@ function TodoList(){
         const updatedTask = task.filter((element,i)=>i !== index);
         setTask(updatedTask);
         console.log("task delete pressed")
-        console.log(i)
     }
 
     function moveUpTask(index){
