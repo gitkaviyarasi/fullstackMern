@@ -5,12 +5,14 @@ function TodoList(){
     const [task,setTask] = useState([]);
 
     useEffect(() => {
+        console.log("Loaded from localStorage:", localStorage.getItem('todos'));
         const savedTasks = JSON.parse(localStorage.getItem('todos')) || [];
         setTask(savedTasks);
     }, []);
 
       // Save tasks to localStorage whenever they change
       useEffect(() => {
+        console.log("Saving to localStorage:", task);
         localStorage.setItem('todos', JSON.stringify(task));
     }, [task]);
 
@@ -24,7 +26,6 @@ function TodoList(){
             console.log("Added task")
             setTask([...task,input])
             setInput("")
-        localStorage.setItem('todos',(task))
         }
         
     }
@@ -66,8 +67,8 @@ function TodoList(){
             <li key={index}>
              <span className='text'> {task}</span>  
              <button className='delete-btn' onClick={()=>deleteTask(index)}>Delete</button>
-             <button className='moveup-btn' onClick={()=>moveUpTask(index)}>Move Up</button>
-             <button className='movedown-btn' onClick={()=>moveDownTask(index)}>Move Down</button>
+             <button className='move-btn' onClick={()=>moveUpTask(index)}>Up</button>
+             <button className='move-btn' onClick={()=>moveDownTask(index)}> Down</button>
              
 </li>
              )}
