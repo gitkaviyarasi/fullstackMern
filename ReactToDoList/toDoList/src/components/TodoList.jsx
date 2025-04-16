@@ -3,18 +3,21 @@ import React ,{useEffect,useState} from 'react';
 function TodoList(){
     const [input,setInput] = useState("");
     const [task,setTask] = useState([]);
+    const [loaded, setLoaded] = useState(false);
 
     useEffect(() => {
         console.log("Loaded from localStorage:", localStorage.getItem('todos'));
         const savedTasks = JSON.parse(localStorage.getItem('todos')) || [];
         setTask(savedTasks);
+        setLoaded(true);
     }, []);
 
       // Save tasks to localStorage whenever they change
       useEffect(() => {
-        console.log("Saving to localStorage:", task);
-        localStorage.setItem('todos', JSON.stringify(task));
-    }, [task]);
+        if (loaded) {
+          localStorage.setItem('todos', JSON.stringify(task));
+        }
+      }, [task, loaded]);
 
     const handleChange = (e)=>{
         setInput(e.target.value)
