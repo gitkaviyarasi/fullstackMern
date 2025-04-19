@@ -3,12 +3,12 @@ import mongoose from 'mongoose';
 
 //dotenv.config();
 
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/sem';
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/product';
 
 const db = async () => {
     try {
-        await mongoose.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/studentsDB');
-        console.log('Database connected.');
+        await mongoose.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/product');
+        console.log('Product Database connected.');
         return mongoose.connection;
     } catch (error) {
         console.error('Database connection error:', error);
