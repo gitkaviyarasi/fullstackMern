@@ -29,7 +29,7 @@ export const login = async (req, res) => {
 }
 
 export const addUser = async (req, res) => {
-    const { username, password } = req.body;
+    const { username, email, password } = req.body;
     try {
         const user = await User.create(req.body)
 
