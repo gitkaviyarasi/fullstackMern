@@ -1,6 +1,11 @@
 import mongoose from 'mongoose';
 
 const bookSchema = new mongoose.Schema({
+    googleId: {
+        type: String,
+        required: true,
+        unique: true
+    },
     title: {
         type: String,
         required: true,
@@ -14,11 +19,8 @@ const bookSchema = new mongoose.Schema({
     category: {
         type: String
     },
-    publisher: {
+    thumbnail: {
         type: String
-    },
-    publishedDate: {
-        type: Date,
     },
     description: {
         type: String
