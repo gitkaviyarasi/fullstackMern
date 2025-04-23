@@ -24,7 +24,7 @@ export const login = async (req, res) => {
 
     const secretKey = process.env.JWT_SECRET_KEY;
 
-    const token = jwt.sign({ username }, secretKey, { expiresIn: '1hr' })
+    const token = jwt.sign({ username }, secretKey, { expiresIn: '24hr' })
     return res.json({ token });
 }
 
@@ -34,7 +34,7 @@ export const addUser = async (req, res) => {
         const user = await User.create(req.body)
 
         const secretKey = process.env.JWT_SECRET_KEY;
-        const token = jwt.sign({ username }, secretKey, { expiresIn: '1hr' })
+        const token = jwt.sign({ username }, secretKey, { expiresIn: '24hr' })
         return res.json({ token });
     }
     catch (error) {
