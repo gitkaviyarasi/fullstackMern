@@ -17,6 +17,7 @@ export const authenticateToken = (req, res, next) => {
       }
 
       req.user = user;
+      console.log(user, "in middle auth")
       return next();
     });
   } else {

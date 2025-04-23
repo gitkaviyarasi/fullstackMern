@@ -8,3 +8,4 @@ Challenges faced:
 
         
         1. add regex for email and password.
+        2. delete is not done.

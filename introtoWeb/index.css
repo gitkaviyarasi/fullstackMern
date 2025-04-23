@@ -8,27 +8,11 @@
   --brightpinkclr: #ef476f;
   --mono: "Oxygen mono", monospace;
   --whiteclr: #f9f9f9;
-  /* --dkblue: #0d314b;
-  --plum: #4b0d49;
-  --hotmag: #ff17e4;
-  --magenta: #e310cb;
-  --aqua: #86fbfb;
-  --white: #f7f8fa;
-  --font-size: 1.3rem;
- 
-  --sans: Oxygen, sans-serif; */
 }
 body {
   font-family: "Inter", sans-serif;
   background-color: var(--whiteclr);
   line-height: 1.6;
-  /* background: #ef476f;
-  background: linear-gradient(
-    90deg,
-    rgba(239, 71, 111, 1) 0%,
-    rgba(232, 104, 104, 1) 50%,
-    rgba(227, 125, 149, 1) 100%
-  ); */
 }
 header {
   background-color: var(--brightpinkclr);
@@ -36,7 +20,6 @@ header {
   padding: 1rem 2rem;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   align-items: flex-start;
   gap: 0.5rem;
 }
@@ -59,20 +42,12 @@ nav ul {
   margin: 0;
   display: flex;
   gap: 1rem;
-  /* display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem; */
 }
 
 header nav a {
-  /* color: white; */
   text-decoration: none;
   color: var(--black);
-  /* font-size: 1.5 rem; */
 }
-/* display: block; */
 
 .dropdown .dropbtn {
   background-color: var(--brightpinkclr);
@@ -109,52 +84,6 @@ header nav a {
   display: block;
 }
 
-/* #intro {
-  padding: 2rem;
-  max-width: 900px;
-  margin: 2rem auto;
-  text-align: center;
-}
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  width: 40%;
-  max-height: 300px;
-  border-radius: 5px;
-}
-
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-
-img {
-  border-radius: 5px 5px 0 0;
-}
-
-.container {
-  padding: 2px 16px;
-}
-
-#intro img {
-  border-radius: 50%;
-  margin-bottom: 1rem;
-}
-
-.name {
-  font-size: 1.5rem;
-  margin: 1rem 0;
-}
-
-.name span {
-  color: #ef476f;
-  font-weight: 600;
-}
-
-h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #222;
-} */
 .intro {
   display: flex;
   align-items: center;
@@ -235,27 +164,3 @@ textarea {
   border-radius: 4px;
   resize: vertical;
 }
-/* #intro {
-  padding-bottom: 10rem;
-}
-#intro p {
-  font-size: 1rem;
-  line-height: 1.5;
-}
-.name span {
-  font-family: var(--sans);
-  font-size: 4rem;
-  color: var(--aqua);
-  display: block;
-  font-weight: 300;
-}
-
-#intro h2 {
-  font-size: 4rem;
-}
-
-img {
-  display: block;
-  max-width: 10%;
-  height: 10%;
-} */

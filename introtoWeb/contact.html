@@ -5,20 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./assets/contact.css">
 </head>
 
 <body>
-    <h2>Contact me</h2>
-    cas
-    <form action="">
-        <label for="fname">Name : </label>
-        <input type="text" id="fname" name="fname" placeholder="Yourname">
-        <label for="email">Email :</label>
-        <input type="text" id="email" name="email" placeholder="email@mail.com">
-        <label for="message">Message</label>
-        <textarea name="message" id="message" placeholder="Your message"></textarea>
-        <button>Submit</button>
-    </form>
+    <!-- <button>Home</button> -->
+    <section id="contactme">
+        <div class="card">
+            <h2>Contact Us</h2>
+            <form id="contactForm" novalidate>
+                <label for="fname">Name : </label>
+                <input type="text" id="fname" name="fname" placeholder="Yourname">
+                <div class="error" id="fnameerror"></div>
+
+                <label for="email">Email :</label>
+                <input type="text" id="email" name="email" placeholder="email@mail.com">
+                <div class="error" id="emailError"></div>
+
+                <label for="message">Message</label>
+                <textarea name="message" id="message" placeholder="Your message"></textarea>
+                <div class="error" id="messageError"></div>
+
+                <label for="phone"> Phone No:</label>
+                <input type="text" id="phone" name="phone" placeholder="123-233-12345">
+                <div class="error" id="phoneError"></div>
+
+                <button type="submit">Submit</button>
+        </div>
+        </form>
+
+    </section>
+    <script src="./index.js"></script>
 </body>
 
 </html>

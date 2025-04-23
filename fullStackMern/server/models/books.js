@@ -16,9 +16,9 @@ const bookSchema = new mongoose.Schema({
             type: String,
         }
     ],
-    category: {
+    categories: [{
         type: String
-    },
+    }],
     thumbnail: {
         type: String
     },
@@ -31,5 +31,6 @@ const bookSchema = new mongoose.Schema({
         timestamps: true,
     });
 
-const Book = model('Book', bookSchema);
+const Book = mongoose.model('Book', bookSchema);
+
 export default Book;
