@@ -1,5 +1,4 @@
 // Used for creating a new user account
-// import CreateAccount from "../interfaces/CreateAccount";
 
 const createUser = async (body) => {
     try {

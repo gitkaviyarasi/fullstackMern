@@ -21,9 +21,9 @@ function HomePage(){
         try{
             const data = await searchGoogleBooks(searchTerm);
             setBooks(data.items);
-            console.log(data.items[0]);
+         
             console.log(data.items[0].volumeInfo.authors)
-            console.log("books",books)
+           
         }
         catch(error)
         {
@@ -41,11 +41,7 @@ function HomePage(){
         />
         <button onClick={handleSubmit}>Search</button>
         <section id="booklist">
-        {/* <div className="grid md:grid-cols-3 gap-4">
-    {books.map((book) => (
-      <BookCard key={book.id} book={book} />
-    ))}
-  </div> */}
+       
             <div >
                 <dl> {books.map((book)=>{
                     const info = book.volumeInfo;
