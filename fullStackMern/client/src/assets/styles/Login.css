@@ -1,0 +1,71 @@
+.login-container,
+.create-account {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/ai-generated-8403513.jpg");
+  background-size: 100%;
+  background-position-x: right 32px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  max-height: 500px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: 10px 20px;
+  color: #044e21;
+}
+.create-account {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.createacc,
+.lsignin,
+.lcreateaccount {
+  width: 70%;
+  padding: 10px;
+  margin-left: 5rem;
+  background-color: #5cb85c;
+  /* background-color: #4A8FE7; */
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  text-align: center; /* Center the text in the button */
+}
+
+button:hover {
+  background-color: #8be88b;
+  color: black;
+}
+
+.loginerror {
+  color: #067432;
+  margin: 20px 10px;
+  text-align: center;
+}
