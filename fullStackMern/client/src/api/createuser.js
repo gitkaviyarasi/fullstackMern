@@ -3,7 +3,7 @@
 
 const createUser = async (body) => {
     try {
-        const response = await fetch("/auth/createUser", {
+        const response = await fetch("/auth/addUser", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
