@@ -1,7 +1,5 @@
 // This file contains the api call for user login
 
-// import { UserLogin } from "../interfaces/UserLogin";
-
 const login = async (userInfo) => {
     try {
         const response = await fetch("/auth/login", {

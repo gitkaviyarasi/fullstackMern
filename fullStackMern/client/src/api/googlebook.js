@@ -4,7 +4,6 @@ import Auth from '../utils/auth';
 const searchGoogleBooks = async (subject) => {
     try {
         const response = await fetch(`/api/searchBooks?keyword=${(subject)}`, {
-            // const response = await fetch(`/api/searchBooks?keyword=${encodeURIComponent(subject)}`, {
             headers: {
                 'Content-Type': 'application/json',
                 Authorization: `Bearer ${Auth.getToken()}`,

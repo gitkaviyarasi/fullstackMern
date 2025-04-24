@@ -1,5 +1,4 @@
 import { useState } from "react";
-// import Userdata from "../interfaces/CreateAccount";
 
 import { useNavigate } from "react-router-dom";
 import { createUser } from "../api/createuser";
