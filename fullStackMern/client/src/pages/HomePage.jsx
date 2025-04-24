@@ -1,9 +1,9 @@
 import React,{useState} from "react";
 import { searchGoogleBooks } from "../api/googlebook";
-import BookCard from "./bookCard";
+import BookCard from "../components/bookCard";
 import "../assets/books.css"
 
-function Homepage(){
+function HomePage(){
     const [searchTerm, setSearchTerm] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
     const [books, setBooks] = useState([]);
@@ -70,4 +70,4 @@ function Homepage(){
     )
 }
 
-export default Homepage;
+export default HomePage;

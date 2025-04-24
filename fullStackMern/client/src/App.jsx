@@ -1,15 +1,16 @@
-import Searchbar from "./components/searchbar";
-import HomePage from "./components/resultpage"
+import { Outlet } from "react-router-dom";
 
+import Navbar from "./components/Navbar";
 
 function App() {
-  return(
-  <>
-  <h1>Book Store</h1>
-  {/* <Searchbar /> */}
-  <HomePage />
+  return (
+    <>
+      <Navbar />
+      <main>
+        <Outlet />
+      </main>
     </>
-  )
+  );
 }
 
 export default App;
